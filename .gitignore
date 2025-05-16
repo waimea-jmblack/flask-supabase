@@ -1,0 +1,7 @@
+venv
+
+# Compiled Python
+__pycache__
+
+#Enviroment Variables
+.env

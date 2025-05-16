@@ -1,0 +1,35 @@
+{% extends "pages/base.jinja" %}
+
+{% block title %} 
+    Supa Interested
+{% endblock %}
+
+{% block content %}
+    <section id="hero"> 
+        <h1>Supa Cool Title</h1>
+    </section>
+
+    <section id="things">
+
+        {% for thing in things %}
+
+            <article>
+                <header>
+                    {{ thing["name"] }}
+                </header>
+
+                Cost ${{ thing["cost"] }}
+
+                <footer>
+                    Delete
+                </footer>
+                
+            </article>
+
+        {% endfor %}
+
+    </section>
+
+
+
+{% endblock %}
