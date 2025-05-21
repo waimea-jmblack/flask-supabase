@@ -1,17 +1,12 @@
 {% extends "pages/base.jinja" %}
 
 {% block title %} 
-    Supa Interested
+    Flask demo - Single Things
 {% endblock %}
 
 {% block content %}
-    <section id="hero"> 
-        <h1>Supa Cool Title</h1>
-    </section>
 
     <section id="things">
-
-        {% for thing in things %}
 
             <article>
                 <header>
@@ -21,12 +16,8 @@
                 Cost ${{ thing["cost"] }}
 
                 <footer>
-                    <a href="/thing/{{ thing['id'] }}">More...</a>
-                    
-                    <a href="/delete/{{ thing['id'] }}">Delete</a>
+                    Delete
                 </footer>
-
-
                 
             </article>
 
